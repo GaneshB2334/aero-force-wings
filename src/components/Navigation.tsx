@@ -10,8 +10,14 @@ const Navigation = () => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'People', path: '/people' },
+    { name: 'Research', path: '/research' },
+    { name: 'Publications', path: '/publications' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'Events', path: '/events' },
+    { name: 'Virtual Lab', path: '/virtual-lab' },
     { name: 'Contact', path: '/contact' },
+    { name: 'Success Stories', path: '/success-stories' },
+    { name: 'Our Collaborators', path: '/collaborators' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
