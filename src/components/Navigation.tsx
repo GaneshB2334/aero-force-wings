@@ -30,7 +30,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
             <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-              <Plane className="h-6 w-6 text-primary transform group-hover:rotate-12 transition-transform" />
+              <img className='h-8 w-8' src="https://res.cloudinary.com/dfuwsfjjc/image/upload/v1756407116/logo_kfpy9n.png" alt="" />
             </div>
             <div>
               <span className="text-xl font-bold text-gradient">AeroForce</span>
