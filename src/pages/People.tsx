@@ -4,93 +4,139 @@ import { Mail, Linkedin, Github } from 'lucide-react';
 const People = () => {
   const faculty = [
     {
-      name: 'Dr. Rajesh Kumar',
+      name: 'Dr. Sandeep Hanwate',
       role: 'Faculty Coordinator',
       department: 'Electronics & Telecommunication',
-      email: 'rajesh.kumar@ghrcem.edu.in',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=faces',
+      email: 'sandeep.hanwate@raisoni.net',
+      image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=X9XdNlIAAAAJ&citpid=5',
       bio: 'Leading research in UAV technology and autonomous systems.'
     },
-    {
-      name: 'Prof. Priya Sharma',
-      role: 'Co-Coordinator',
-      department: 'Computer Engineering',
-      email: 'priya.sharma@ghrcem.edu.in',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b647?w=300&h=300&fit=crop&crop=faces',
-      bio: 'Expert in drone programming and AI applications.'
-    }
   ];
 
   const students = [
     {
-      name: 'Arjun Patel',
+      name: 'Dipak Reddy',
       role: 'President',
       year: 'Final Year',
       branch: 'Electronics Engineering',
-      email: 'arjun.patel@student.ghrcem.edu.in',
+      email: 'dipakreddy2628@gmail.com',
       linkedin: '#',
-      github: '#',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=faces',
+      github: 'https://github.com/Reddy2628',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756670188/passphoto_uxeck9.jpg',
       skills: ['Drone Design', 'Flight Controller', 'Leadership'],
       projects: 3
     },
     {
-      name: 'Sneha Reddy',
+      name: 'Shantanu Deshmukh',
       role: 'Vice President',
-      year: 'Third Year',
-      branch: 'Computer Engineering',
-      email: 'sneha.reddy@student.ghrcem.edu.in',
-      linkedin: '#',
-      github: '#',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=faces',
-      skills: ['AI/ML', 'Computer Vision', 'Programming'],
-      projects: 5
-    },
-    {
-      name: 'Rohit Singh',
-      role: 'Technical Lead',
-      year: 'Third Year',
-      branch: 'Mechanical Engineering',
-      email: 'rohit.singh@student.ghrcem.edu.in',
-      linkedin: '#',
-      github: '#',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=faces',
-      skills: ['CAD Design', 'Manufacturing', '3D Printing'],
-      projects: 4
-    },
-    {
-      name: 'Ananya Joshi',
-      role: 'Events Coordinator',
       year: 'Second Year',
       branch: 'Electronics Engineering',
-      email: 'ananya.joshi@student.ghrcem.edu.in',
+      email: '#',
       linkedin: '#',
       github: '#',
-      image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=300&h=300&fit=crop&crop=faces',
-      skills: ['Event Management', 'Communications', 'Marketing'],
-      projects: 2
-    },
-    {
-      name: 'Vikram Gupta',
-      role: 'Hardware Team Lead',
-      year: 'Final Year',
-      branch: 'Electronics Engineering',
-      email: 'vikram.gupta@student.ghrcem.edu.in',
-      linkedin: '#',
-      github: '#',
-      image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=300&h=300&fit=crop&crop=faces',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666160/WhatsApp_Image_2025-08-31_at_23.58.52_84600df6_kxkcgr.jpg',
       skills: ['PCB Design', 'Embedded Systems', 'IoT'],
       projects: 6
     },
     {
-      name: 'Kavya Mehta',
-      role: 'Software Team Lead',
-      year: 'Third Year',
-      branch: 'Computer Engineering',
-      email: 'kavya.mehta@student.ghrcem.edu.in',
+      name: 'Aniket Shrungare',
+      role: 'Technical Lead',
+      year: 'Final Year',
+      branch: 'Electronics Engineering',
+      email: 'aniketshrungare269@gmail.com',
       linkedin: '#',
       github: '#',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop&crop=faces',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666658/WhatsApp_Image_2025-09-01_at_00.24.04_0cdb26cf_xtwtvq.jpg',
+      skills: ['AI/ML', 'Computer Vision', 'Programming'],
+      projects: 5
+    },
+    {
+      name: 'Pratik Mane',
+      role: 'Hardware Lead',
+      year: 'Final Year',
+      branch: 'Electronics Engineering',
+      email: 'pratikmane4343@gmail.com',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp',
+      skills: ['CAD Design', 'Manufacturing', '3D Printing'],
+      projects: 4
+    },
+    {
+      name: 'Manmath Minke',
+      role: 'Events Coordinator',
+      year: 'Final Year',
+      branch: 'Electronics Engineering',
+      email: 'manmathminke2004@gmail.com',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666229/WhatsApp_Image_2025-08-31_at_23.58.29_c8b5ae46_f5hup2.jpg',
+      skills: ['Event Management', 'Communications', 'Marketing'],
+      projects: 2
+    },
+    {
+      name: 'Rehan Patel',
+      role: 'Software Team Lead',
+      year: 'Second Year',
+      branch: 'Electronics Engineering',
+      email: 'rehansheikh.etc@gmail.com',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666126/WhatsApp_Image_2025-08-31_at_22.48.43_32ae20a0_jbxvgu.jpg',
+      skills: ['Python', 'ROS', 'Machine Learning'],
+      projects: 4
+    }, {
+      name: 'Apurva Palamkar',
+      role: 'Software Team Lead',
+      year: 'Third Year',
+      branch: 'Electronics Engineering',
+      email: 'apurvapalamkar@gmail.com',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666395/WhatsApp_Image_2025-08-31_at_08.49.36_5dcd36fb_noh5kv.jpg',
+      skills: ['Python', 'ROS', 'Machine Learning'],
+      projects: 4
+    }, {
+      name: 'Shreya Bhoyar',
+      role: 'Software Team Lead',
+      year: 'Third Year',
+      branch: 'Electronics Engineering',
+      email: 'shreya.bhoyar.etc@ghrcem.raisoni.net',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp',
+      skills: ['Python', 'ROS', 'Machine Learning'],
+      projects: 4
+    }, {
+      name: 'Abhijeet Hulge',
+      role: 'Club Member',
+      year: 'Final Year',
+      branch: 'Electronics Engineering',
+      email: '#',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp',
+      skills: ['Python', 'ROS', 'Machine Learning'],
+      projects: 4
+    }, {
+      name: 'Prashant Pawar',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      email: '#',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp',
+      skills: ['Python', 'ROS', 'Machine Learning'],
+      projects: 4
+    }, {
+      name: 'Omkar Mane',
+      role: 'Club Member',
+      year: 'Final Year',
+      branch: 'Electronics Engineering',
+      email: '#',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp',
       skills: ['Python', 'ROS', 'Machine Learning'],
       projects: 4
     }
@@ -112,12 +158,12 @@ const People = () => {
         {/* Faculty Section */}
         <section className="mb-20">
           <h2 className="text-3xl font-bold mb-8 text-center">Faculty Coordinators</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="max-w-lg mx-auto">
             {faculty.map((member, index) => (
-              <div 
+              <div
                 key={member.name}
                 className="card-tech text-center space-y-4 hover-glow"
-                style={{animationDelay: `${index * 0.1}s`}}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="relative mx-auto w-32 h-32">
                   <img
@@ -151,10 +197,10 @@ const People = () => {
           <h2 className="text-3xl font-bold mb-8 text-center">Student Members</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {students.map((member, index) => (
-              <div 
+              <div
                 key={member.name}
                 className="card-tech space-y-4 hover-glow"
-                style={{animationDelay: `${index * 0.1}s`}}
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start space-x-4">
                   <div className="relative w-20 h-20 flex-shrink-0">
@@ -217,7 +263,7 @@ const People = () => {
           <div className="card-tech max-w-2xl mx-auto p-8 space-y-4">
             <h3 className="text-2xl font-bold">Want to Join Our Team?</h3>
             <p className="text-muted-foreground">
-              We're always looking for passionate students interested in drone technology, 
+              We're always looking for passionate students interested in drone technology,
               programming, design, and innovation.
             </p>
             <a href="/contact" className="inline-block">

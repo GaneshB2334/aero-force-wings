@@ -5,7 +5,7 @@ const Footer = () => {
     {
       name: 'Instagram',
       icon: Instagram,
-      url: '#',
+      url: 'https://instagram.com/aeroforce_ghrcem',
       color: 'hover:text-pink-400'
     },
     {

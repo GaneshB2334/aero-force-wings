@@ -42,14 +42,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: 'aeroforce@ghrcem.edu.in',
-      link: 'mailto:aeroforce@ghrcem.edu.in'
+      details: 'aeroforceclubghrcem24@gmail.com',
+      link: 'mailto:aeroforceclubghrcem24@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      details: '+91 98765 43210',
-      link: 'tel:+919876543210'
+      details: '+91 82670 55484',
+      link: 'tel:+918267055484'
     },
     {
       icon: MapPin,
@@ -69,7 +69,7 @@ const Contact = () => {
     {
       name: 'Instagram',
       icon: Instagram,
-      url: '#',
+      url: 'https://instagram.com/aeroforce_ghrcem',
       color: 'hover:text-pink-400',
       handle: '@aeroforce_ghrcem'
     },

@@ -1,7 +1,6 @@
 import { ArrowRight, Zap, Users, Calendar, Target } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import heroImage from '@/assets/hero-drone.jpg';
 
 const Index = () => {
   const features = [
@@ -33,7 +32,7 @@ const Index = () => {
       <section className="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={heroImage} 
+            src="https://res.cloudinary.com/dinhdwh2y/image/upload/v1756665128/WhatsApp_Image_2025-08-31_at_23.57.15_dc11e692_nev680.jpg" 
             alt="AeroForce Drone" 
             className="w-full h-full object-cover opacity-20"
           />
@@ -46,9 +45,11 @@ const Index = () => {
                 <span className="text-gradient">AeroForce</span>
                 <br />
                 <span className="text-foreground">Drone Club</span>
+                <br />
+                <span className=''>GHRCEM, Pune</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                Pioneering the future of drone technology at G.H. Raisoni College of Engineering and Management, Pune
+                "Engineering the skies"
               </p>
             </div>
             

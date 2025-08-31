@@ -15,7 +15,6 @@ const Navigation = () => {
     { name: 'Publications', path: '/publications' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Events', path: '/events' },
-    { name: 'Virtual Lab', path: '/virtual-lab' },
     { name: 'Contact', path: '/contact' },
     { name: 'Success Stories', path: '/success-stories' },
     { name: 'Our Collaborators', path: '/collaborators' },
@@ -29,8 +28,8 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-              <img className='h-8 w-8' src="https://res.cloudinary.com/dfuwsfjjc/image/upload/v1756407116/logo_kfpy9n.png" alt="" />
+            <div className="bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+              <img className='h-8 w-8 rounded-xl' src="https://res.cloudinary.com/dinhdwh2y/image/upload/v1756664722/Engineering_The_Skies_wp6rda.png" alt="" />
             </div>
             <div>
               <span className="text-xl font-bold text-gradient">AeroForce</span>

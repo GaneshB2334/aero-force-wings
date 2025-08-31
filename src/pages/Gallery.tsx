@@ -1,77 +1,133 @@
 import { useState } from 'react';
-import { Play, Calendar, MapPin } from 'lucide-react';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  const categories = [
-    { id: 'all', name: 'All' },
-    { id: 'events', name: 'Events' },
-    { id: 'projects', name: 'Projects' },
-    { id: 'workshops', name: 'Workshops' },
-    { id: 'competitions', name: 'Competitions' }
-  ];
-
   const galleryItems = [
     {
-      id: 1,
-      type: 'image',
-      category: 'events',
-      title: 'Annual Drone Festival 2024',
-      date: 'March 15, 2024',
-      location: 'GHRCEM Campus',
-      description: 'Our biggest event of the year featuring drone displays and competitions'
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668711/IMG-20250901-WA0038_vxcpa0.jpg",
     },
     {
-      id: 2,
-      type: 'video',
-      category: 'projects',
-      title: 'Autonomous Delivery Drone Demo',
-      date: 'February 20, 2024',
-      location: 'Innovation Lab',
-      description: 'Demonstration of our latest autonomous delivery drone prototype'
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668713/IMG-20250901-WA0040_ukjjv1.jpg",
     },
     {
-      id: 3,
-      type: 'image',
-      category: 'workshops',
-      title: 'Drone Programming Workshop',
-      date: 'January 10, 2024',
-      location: 'Computer Lab',
-      description: 'Hands-on workshop teaching drone programming fundamentals'
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668712/IMG-20250901-WA0039_puw9j7.jpg",
     },
     {
-      id: 4,
-      type: 'image',
-      category: 'competitions',
-      title: 'Inter-College Drone Racing',
-      date: 'December 5, 2023',
-      location: 'Sports Ground',
-      description: 'Thrilling drone racing competition with teams from multiple colleges'
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668710/IMG-20250901-WA0037_xpkcju.jpg",
     },
     {
-      id: 5,
-      type: 'video',
-      category: 'projects',
-      title: 'Search and Rescue Drone',
-      date: 'November 15, 2023',
-      location: 'Field Testing',
-      description: 'Testing our search and rescue drone in simulated emergency scenarios'
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668709/IMG-20250901-WA0036_qxmlss.jpg",
     },
     {
-      id: 6,
-      type: 'image',
-      category: 'events',
-      title: 'Tech Talk by Industry Expert',
-      date: 'October 8, 2023',
-      location: 'Auditorium',
-      description: 'Insightful session on the future of drone technology in various industries'
-    }
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668708/IMG-20250901-WA0035_nwtrqw.jpg",
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671688/IMG_2472_oy3wmi.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668707/IMG-20250901-WA0033_npqvif.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668704/IMG-20250901-WA0030_qderbb.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668703/IMG-20250901-WA0029_gatwok.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668702/IMG-20250901-WA0028_tl3zgt.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668701/IMG-20250901-WA0027_aprtfr.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668700/IMG-20250901-WA0026_xdku2d.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668699/IMG-20250901-WA0024_fbqiak.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668698/IMG-20250901-WA0022_jomt7t.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668695/IMG-20250901-WA0010_pfsgav.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668695/IMG-20250901-WA0013_bhmxlh.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668695/IMG-20250901-WA0009_x690uz.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671265/IMG_2030_y4bki4.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671279/IMG_2393_iv3god.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671277/IMG_2217_suolc5.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671275/IMG_2332_ejthfm.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671273/IMG_2330_moe3d7.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671273/IMG_2437_yghmvw.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671272/IMG_2034_avumrq.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671271/IMG_2328_xlgebs.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671269/IMG_2190_vilkx2.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671267/IMG_2165_pr0dge.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671267/IMG_2185_uqkqhj.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671265/IMG_2030_y4bki4.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671265/IMG_2114_ckjrja.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671264/IMG_2164_px2yie.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671263/IMG_2087_z55biv.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671261/IMG_2026_tioxic_wmyckc.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671261/IMG_2032_eyycgh.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671261/IMG_2081_jvhwgj.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671259/IMG_2463_lo4kkk.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671259/IMG_2047_mlw7vw.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671258/IMG_2475_vfoehg.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671258/IMG_2449_agn59c.jpg"
+    },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756670772/IMG_2014_nmayps.jpg"
+    },
   ];
-
-  const filteredItems = selectedCategory === 'all' 
-    ? galleryItems 
-    : galleryItems.filter(item => item.category === selectedCategory);
 
   return (
     <div className="min-h-screen py-20">
@@ -86,66 +142,15 @@ const Gallery = () => {
           </p>
         </div>
 
-        {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-2 rounded-full transition-colors ${
-                selectedCategory === category.id
-                  ? 'bg-primary text-primary-foreground'
-                  : 'bg-background border border-border hover:bg-muted'
-              }`}
-            >
-              {category.name}
-            </button>
-          ))}
-        </div>
-
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredItems.map((item, index) => (
-            <div 
-              key={item.id}
-              className="card-tech group hover-glow cursor-pointer"
-              style={{animationDelay: `${index * 0.1}s`}}
+          {galleryItems.map((item, index) => (
+            <div
+              key={index}
+              className="rounded-lg group cursor-pointer"
             >
-              <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg mb-4 overflow-hidden">
-                {/* Placeholder for actual images/videos */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  {item.type === 'video' && (
-                    <div className="p-4 bg-background/80 rounded-full">
-                      <Play className="h-8 w-8 text-primary" />
-                    </div>
-                  )}
-                </div>
-                
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              </div>
-              
-              <div className="space-y-3">
-                <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
-                  {item.title}
-                </h3>
-                
-                <div className="flex items-center justify-between text-sm text-muted-foreground">
-                  <div className="flex items-center space-x-1">
-                    <Calendar className="h-4 w-4" />
-                    <span>{item.date}</span>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <MapPin className="h-4 w-4" />
-                    <span>{item.location}</span>
-                  </div>
-                </div>
-                
-                <p className="text-sm text-muted-foreground">{item.description}</p>
-                
-                <span className="inline-block px-3 py-1 bg-primary/10 text-primary rounded-full text-xs capitalize">
-                  {item.category}
-                </span>
+              <div className="relative aspect-video group-hover:scale-105 duration-500 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg overflow-hidden z-0">
+                <img src={item.link} alt="" className='object-cover h-full w-full' />
               </div>
             </div>
           ))}

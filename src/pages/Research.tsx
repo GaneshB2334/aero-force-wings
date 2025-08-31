@@ -40,10 +40,10 @@ const Research = () => {
         {/* Research Areas */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {researchAreas.map((area, index) => (
-            <div 
+            <div
               key={area.title}
               className="card-tech group hover-glow"
-              style={{animationDelay: `${index * 0.1}s`}}
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="space-y-4">
                 <div className="p-3 bg-primary/10 rounded-lg w-fit group-hover:bg-primary/20 transition-colors">
@@ -62,19 +62,19 @@ const Research = () => {
             <h2 className="text-3xl font-bold text-center mb-12">Current Projects</h2>
             <div className="space-y-8">
               <div className="card-tech">
-                <h3 className="text-xl font-semibold mb-4">Project DroneNet</h3>
+                <h3 className="text-xl font-semibold mb-4">Agriculture Drone</h3>
                 <p className="text-muted-foreground mb-4">
-                  Developing a mesh network protocol for drone-to-drone communication in emergency scenarios.
+                  Agriculture Drone for crop monitoring
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Networking</span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Agriculture</span>
                   <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Emergency Response</span>
                   <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">IoT</span>
                 </div>
               </div>
-              
+
               <div className="card-tech">
-                <h3 className="text-xl font-semibold mb-4">AgroVision</h3>
+                <h3 className="text-xl font-semibold mb-4">Survelliance Drone</h3>
                 <p className="text-muted-foreground mb-4">
                   Precision agriculture solution using computer vision and machine learning for crop monitoring.
                 </p>
