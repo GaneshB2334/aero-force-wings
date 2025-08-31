@@ -131,15 +131,15 @@ const Index = () => {
             
             <div className="relative">
               <div className="card-tech p-8 text-center space-y-4">
-                <div className="text-4xl font-bold text-gradient">50+</div>
+                <div className="text-4xl font-bold text-gradient">20+</div>
                 <p className="text-muted-foreground">Active Members</p>
               </div>
               <div className="absolute -top-4 -right-4 card-tech p-6 text-center space-y-2">
-                <div className="text-3xl font-bold text-gradient">25+</div>
+                <div className="text-3xl font-bold text-gradient">5+</div>
                 <p className="text-sm text-muted-foreground">Events Held</p>
               </div>
               <div className="absolute -bottom-4 -left-4 card-tech p-6 text-center space-y-2">
-                <div className="text-3xl font-bold text-gradient">10+</div>
+                <div className="text-3xl font-bold text-gradient">5+</div>
                 <p className="text-sm text-muted-foreground">Projects</p>
               </div>
             </div>
