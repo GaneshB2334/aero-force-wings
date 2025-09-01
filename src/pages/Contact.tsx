@@ -264,10 +264,25 @@ const Contact = () => {
               Come visit us at GHRCEM Pune! Our club activities take place in the Engineering Labs 
               and campus grounds. We're always excited to meet fellow drone enthusiasts.
             </p>
-            <div className="bg-muted/10 rounded-lg p-8 border border-border/50">
-              <div className="flex items-center justify-center space-x-2 text-muted-foreground">
-                <MapPin className="h-5 w-5" />
-                <span>Interactive campus map coming soon</span>
+            <div className="bg-muted/10 rounded-lg p-4 border border-border/50 overflow-hidden">
+              <div className="relative w-full h-[450px] rounded-lg overflow-hidden">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0147867921683!2d73.97954937519295!3d18.573372082530483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c38275a673c5%3A0x368b6a8fa28346d!2sG%20H%20RAISONI%20College%20OF%20ENGINEERING%20AND%20Management%2C%20PUNE!5e0!3m2!1sen!2sin!4v1756749643421!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="100%" 
+                  style={{border: 0}} 
+                  allowFullScreen 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-lg"
+                  title="G.H. Raisoni College of Engineering and Management, Pune Location"
+                />
+              </div>
+              <div className="mt-4 flex items-center justify-center space-x-2 text-muted-foreground">
+                <MapPin className="h-5 w-5 text-primary" />
+                <span className="text-sm">
+                  G.H. Raisoni College of Engineering and Management, Pune, Maharashtra 411028
+                </span>
               </div>
             </div>
           </div>
