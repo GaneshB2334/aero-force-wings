@@ -5,138 +5,10 @@ import { Link } from 'react-router-dom';
 const Publications = () => {
   const publications = [
     {
-      "title": "Adaptive policy for load frequency control",
-      "authors": "S Hanwate, YV Hote, S Saxena",
-      "journal": "IEEE Transactions on Power Systems",
-      "year": "2017",
-      "type": "Journal",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=X9XdNlIAAAAJ&citation_for_view=X9XdNlIAAAAJ:Tyk-4Ss8FVUC"
-    },
-    {
-      "title": "Optimal PID design for Load frequency control using QRAWCP approach",
-      "authors": "SD Hanwate, YV Hote",
-      "journal": "IFAC-PapersOnLine",
-      "year": "2018",
-      "type": "Conference Paper",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=X9XdNlIAAAAJ&citation_for_view=X9XdNlIAAAAJ:W7OEmFMy1HYC"
-    },
-    {
-      "title": "Design of PID controller for sun tracker system using QRAWCP approach",
-      "authors": "SD Hanwate, YV Hote",
-      "journal": "International Journal of Computational Intelligence Systems",
-      "year": "2018",
-      "type": "Journal",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=X9XdNlIAAAAJ&citation_for_view=X9XdNlIAAAAJ:Y0pCki6q_DkC"
-    },
-    {
-      "title": "Design of PID controller for inverted pendulum using stability boundary locus",
-      "authors": "SD Hanwate, YV Hote",
-      "journal": "2014 annual IEEE India conference (INDICON)",
-      "year": "2014",
-      "type": "Conference Paper",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Design and implementation of adaptive control logic for cart-inverted pendulum system",
-      "authors": "S Hanwate, YV Hote, A Budhraja",
-      "journal": "Proceedings of the Institution of Mechanical Engineers, Part I: Journal of …",
-      "year": "2019",
-      "type": "Journal",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Analysis of practical non-minimum phase systems by transfer function approach",
-      "authors": "S Bose, YV Hote, SD Hanwate",
-      "journal": "2018 4th International Conference on Electrical Energy Systems (ICEES)",
-      "year": "2018",
-      "type": "Conference Paper",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Improved performance of cart inverted pendulum system using LQR based PID controller and ANN",
-      "authors": "SD Hanwate, A Budhraja, YV Hote",
-      "journal": "2015 IEEE UP section conference on electrical computer and electronics …",
-      "year": "2015",
-      "type": "Conference Paper",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Relative stability analysis of perturbed cart inverted pendulum: An experimental approach",
-      "authors": "S Hanwate, YV Hote",
-      "journal": "IETE Technical Review",
-      "year": "2018",
-      "type": "Journal",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Analysis of effects due to right half plane zeros in pi controller based hydro turbine",
-      "authors": "S Bose, YV Hote, SD Hanwate",
-      "journal": "IFAC-PapersOnLine",
-      "year": "2018",
-      "type": "Conference Paper",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Analysis of PSO-PID controller for CSTR temperature control",
-      "authors": "P Deulkar, S Hanwate",
-      "journal": "2020 IEEE First International Conference on Smart Technologies for Power …",
-      "year": "2020",
-      "type": "Conference Paper",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Modelling and simulation of Quadruple Tank system using SBL-PI controller",
-      "authors": "P Shah, S Hanwate",
-      "journal": "2020 International Conference on Industry 4.0 Technology (I4Tech)",
-      "year": "2020",
-      "type": "Conference Paper",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Yaw rate and sideslip angle control of active 4WS using a two-time scale based novel sliding mode control",
-      "authors": "P Aware, S Hanwate, V Wanaskar",
-      "journal": "2021 5th international conference on intelligent computing and control …",
-      "year": "2021",
-      "type": "Conference Paper",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Analysis of adverse effects due to zeros in non-minimum phase discrete-time linear systems",
-      "authors": "S Bose, YV Hote, SD Hanwate",
-      "journal": "2017 14th IEEE India Council International Conference (INDICON)",
-      "year": "2017",
-      "type": "Conference Paper",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Study Of Designing Regulator Systems By Using The Different Observer Approach.",
-      "authors": "R Bhalerao, S Hanwate",
-      "journal": "IOSR Journal of Electrical and Electronics Engineering",
-      "year": "2012",
-      "type": "Journal",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "A disturbance observer-based sliding mode control for Yawrate and sideslip angle control of four-wheel steering vehicle",
-      "authors": "R Pendkar, S Hanwate",
-      "journal": "2021 5th international conference on intelligent computing and control …",
-      "year": "2021",
-      "type": "Conference Paper",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Analysis of initial undershoot in step response of type-1 nonminimum phase systems",
-      "authors": "S Bose, YV Hote, S Hanwate",
-      "journal": "2019 IEEE Region 10 Symposium (TENSYMP)",
-      "year": "2019",
-      "type": "Conference Paper",
-      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    },
-    {
-      "title": "Hardware Implementation of BPSK System on Virtex2-Pro FPGA Using Xilinx System Generator",
-      "authors": "CJ Harsha, SD Hanwate, AS Mali",
-      "journal": null,
-      "year": "2013",
+      "title": "Robust Fuzzy Quasi-SMC-Based Steering Control of Autonomous Vehicle Subject to Parametric Uncertainties and Disturbances",
+      "authors": "RM Shet, GV Lakhekar, NC Iyer, SD Hanwate",
+      "journal": "International Journal of Automotive Technology",
+      "year": "2024",
       "type": "Journal",
       "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
     },
@@ -157,13 +29,143 @@ const Publications = () => {
       "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
     },
     {
-      "title": "Robust Fuzzy Quasi-SMC-Based Steering Control of Autonomous Vehicle Subject to Parametric Uncertainties and Disturbances",
-      "authors": "RM Shet, GV Lakhekar, NC Iyer, SD Hanwate",
-      "journal": "International Journal of Automotive Technology",
-      "year": "2024",
+      "title": "A disturbance observer-based sliding mode control for Yawrate and sideslip angle control of four-wheel steering vehicle",
+      "authors": "R Pendkar, S Hanwate",
+      "journal": "2021 5th international conference on intelligent computing and control …",
+      "year": "2021",
+      "type": "Conference Paper",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    {
+      "title": "Yaw rate and sideslip angle control of active 4WS using a two-time scale based novel sliding mode control",
+      "authors": "P Aware, S Hanwate, V Wanaskar",
+      "journal": "2021 5th international conference on intelligent computing and control …",
+      "year": "2021",
+      "type": "Conference Paper",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+     {
+      "title": "Analysis of PSO-PID controller for CSTR temperature control",
+      "authors": "P Deulkar, S Hanwate",
+      "journal": "2020 IEEE First International Conference on Smart Technologies for Power …",
+      "year": "2020",
+      "type": "Conference Paper",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    {
+      "title": "Modelling and simulation of Quadruple Tank system using SBL-PI controller",
+      "authors": "P Shah, S Hanwate",
+      "journal": "2020 International Conference on Industry 4.0 Technology (I4Tech)",
+      "year": "2020",
+      "type": "Conference Paper",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    {
+      "title": "Analysis of initial undershoot in step response of type-1 nonminimum phase systems",
+      "authors": "S Bose, YV Hote, S Hanwate",
+      "journal": "2019 IEEE Region 10 Symposium (TENSYMP)",
+      "year": "2019",
+      "type": "Conference Paper",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    {
+      "title": "Design and implementation of adaptive control logic for cart-inverted pendulum system",
+      "authors": "S Hanwate, YV Hote, A Budhraja",
+      "journal": "Proceedings of the Institution of Mechanical Engineers, Part I: Journal of …",
+      "year": "2019",
       "type": "Journal",
       "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
-    }
+    },
+    {
+      "title": "Optimal PID design for Load frequency control using QRAWCP approach",
+      "authors": "SD Hanwate, YV Hote",
+      "journal": "IFAC-PapersOnLine",
+      "year": "2018",
+      "type": "Conference Paper",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=X9XdNlIAAAAJ&citation_for_view=X9XdNlIAAAAJ:W7OEmFMy1HYC"
+    },
+    {
+      "title": "Design of PID controller for sun tracker system using QRAWCP approach",
+      "authors": "SD Hanwate, YV Hote",
+      "journal": "International Journal of Computational Intelligence Systems",
+      "year": "2018",
+      "type": "Journal",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=X9XdNlIAAAAJ&citation_for_view=X9XdNlIAAAAJ:Y0pCki6q_DkC"
+    },
+    {
+      "title": "Analysis of practical non-minimum phase systems by transfer function approach",
+      "authors": "S Bose, YV Hote, SD Hanwate",
+      "journal": "2018 4th International Conference on Electrical Energy Systems (ICEES)",
+      "year": "2018",
+      "type": "Conference Paper",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    {
+      "title": "Relative stability analysis of perturbed cart inverted pendulum: An experimental approach",
+      "authors": "S Hanwate, YV Hote",
+      "journal": "IETE Technical Review",
+      "year": "2018",
+      "type": "Journal",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    {
+      "title": "Analysis of effects due to right half plane zeros in pi controller based hydro turbine",
+      "authors": "S Bose, YV Hote, SD Hanwate",
+      "journal": "IFAC-PapersOnLine",
+      "year": "2018",
+      "type": "Conference Paper",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    {
+      "title": "Analysis of adverse effects due to zeros in non-minimum phase discrete-time linear systems",
+      "authors": "S Bose, YV Hote, SD Hanwate",
+      "journal": "2017 14th IEEE India Council International Conference (INDICON)",
+      "year": "2017",
+      "type": "Conference Paper",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    {
+      "title": "Adaptive policy for load frequency control",
+      "authors": "S Hanwate, YV Hote, S Saxena",
+      "journal": "IEEE Transactions on Power Systems",
+      "year": "2017",
+      "type": "Journal",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=X9XdNlIAAAAJ&citation_for_view=X9XdNlIAAAAJ:Tyk-4Ss8FVUC"
+    },
+    {
+      "title": "Improved performance of cart inverted pendulum system using LQR based PID controller and ANN",
+      "authors": "SD Hanwate, A Budhraja, YV Hote",
+      "journal": "2015 IEEE UP section conference on electrical computer and electronics …",
+      "year": "2015",
+      "type": "Conference Paper",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    {
+      "title": "Design of PID controller for inverted pendulum using stability boundary locus",
+      "authors": "SD Hanwate, YV Hote",
+      "journal": "2014 annual IEEE India conference (INDICON)",
+      "year": "2014",
+      "type": "Conference Paper",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    {
+      "title": "Hardware Implementation of BPSK System on Virtex2-Pro FPGA Using Xilinx System Generator",
+      "authors": "CJ Harsha, SD Hanwate, AS Mali",
+      "journal": null,
+      "year": "2013",
+      "type": "Journal",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    {
+      "title": "Study Of Designing Regulator Systems By Using The Different Observer Approach.",
+      "authors": "R Bhalerao, S Hanwate",
+      "journal": "IOSR Journal of Electrical and Electronics Engineering",
+      "year": "2012",
+      "type": "Journal",
+      "link": "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=X9XdNlIAAAAJ"
+    },
+    
+    
   ];
 
   return (

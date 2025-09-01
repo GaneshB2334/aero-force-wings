@@ -110,7 +110,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-4xl font-bold">About AeroForce</h2>
+              <h2 className="text-4xl font-bold">About AeroForce Club </h2>
               <p className="text-lg text-muted-foreground">
                 AeroForce Drone Club is a student-driven community at GHRCEM dedicated to advancing 
                 drone technology and fostering innovation. We bring together passionate individuals 
@@ -131,15 +131,15 @@ const Index = () => {
             
             <div className="relative">
               <div className="card-tech p-8 text-center space-y-4">
-                <div className="text-4xl font-bold text-gradient">20+</div>
+                <div className="text-4xl font-bold text-gradient">40+</div>
                 <p className="text-muted-foreground">Active Members</p>
               </div>
               <div className="absolute -top-4 -right-4 card-tech p-6 text-center space-y-2">
-                <div className="text-3xl font-bold text-gradient">5+</div>
+                <div className="text-3xl font-bold text-gradient">10+</div>
                 <p className="text-sm text-muted-foreground">Events Held</p>
               </div>
               <div className="absolute -bottom-4 -left-4 card-tech p-6 text-center space-y-2">
-                <div className="text-3xl font-bold text-gradient">5+</div>
+                <div className="text-3xl font-bold text-gradient">10+</div>
                 <p className="text-sm text-muted-foreground">Projects</p>
               </div>
             </div>

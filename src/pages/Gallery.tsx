@@ -8,6 +8,9 @@ const Gallery = () => {
       link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668711/IMG-20250901-WA0038_vxcpa0.jpg",
     },
     {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756726637/WhatsApp_Image_2025-09-01_at_17.04.19_5b36b475_pdsexo.jpg"
+    },
+    {
       link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668713/IMG-20250901-WA0040_ukjjv1.jpg",
     },
     {
@@ -127,6 +130,10 @@ const Gallery = () => {
     {
       link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756670772/IMG_2014_nmayps.jpg"
     },
+    {
+      link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756726644/WhatsApp_Image_2025-09-01_at_17.04.19_b4f47667_o62ea8.jpg"
+    },
+    
   ];
 
   return (

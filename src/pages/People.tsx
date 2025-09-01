@@ -11,12 +11,38 @@ const People = () => {
       image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=X9XdNlIAAAAJ&citpid=5',
       bio: 'Leading research in UAV technology and autonomous systems.'
     },
+     {
+      name: 'Dr. R.D.Kharadkar',
+      role: '',
+      department: '',
+      email: '',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756725947/images_vdfkaa.jpg',
+      bio: 'Campus Director GH Raisoni College of Engineering & Management,Pune'
+    },
+     {
+      name: 'Dr. Nagnath Hulle',
+      role: '',
+      department: '',
+      email: '',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756728640/128049120_b27b_6_fe6i61.jpg',
+      bio: 'Deputy Director, G.H. Raisoni Societys, College of Engineering and Management,Pune.'
+    },
+    {
+      name: 'Dr. Amol Bhoi',
+      role: '',
+      department: '',
+      email: '',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756724764/amol-bhoi_aj1e94.png',
+      bio: 'Head of Department (HOD), Electronics & Telecommunication Engineering.'
+    },
+   
+  
   ];
 
   const students = [
     {
       name: 'Dipak Reddy',
-      role: 'President',
+      role: 'President , Treasurer',
       year: 'Final Year',
       branch: 'Electronics Engineering',
       email: 'dipakreddy2628@gmail.com',
@@ -24,7 +50,7 @@ const People = () => {
       github: 'https://github.com/Reddy2628',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756670188/passphoto_uxeck9.jpg',
       skills: ['Drone Design', 'Flight Controller', 'Leadership'],
-      projects: 3
+      projects: 2
     },
     {
       name: 'Shantanu Deshmukh',
@@ -36,11 +62,11 @@ const People = () => {
       github: '#',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666160/WhatsApp_Image_2025-08-31_at_23.58.52_84600df6_kxkcgr.jpg',
       skills: ['PCB Design', 'Embedded Systems', 'IoT'],
-      projects: 6
+      projects: 2
     },
     {
       name: 'Aniket Shrungare',
-      role: 'Technical Lead',
+      role: 'Secretary , Technical Lead',
       year: 'Final Year',
       branch: 'Electronics Engineering',
       email: 'aniketshrungare269@gmail.com',
@@ -48,23 +74,23 @@ const People = () => {
       github: '#',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666658/WhatsApp_Image_2025-09-01_at_00.24.04_0cdb26cf_xtwtvq.jpg',
       skills: ['AI/ML', 'Computer Vision', 'Programming'],
-      projects: 5
+      projects: 2
     },
     {
       name: 'Pratik Mane',
-      role: 'Hardware Lead',
+      role: 'Simulation & Testing Lead , Hardware Lead',
       year: 'Final Year',
       branch: 'Electronics Engineering',
       email: 'pratikmane4343@gmail.com',
       linkedin: '#',
       github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756726622/WhatsApp_Image_2025-09-01_at_17.04.19_d668cdcd_bvemjo.jpg',
       skills: ['CAD Design', 'Manufacturing', '3D Printing'],
-      projects: 4
+      projects: 2
     },
     {
       name: 'Manmath Minke',
-      role: 'Events Coordinator',
+      role: 'Events Coordinator,Outreach & Public Relations Head',
       year: 'Final Year',
       branch: 'Electronics Engineering',
       email: 'manmathminke2004@gmail.com',
@@ -84,62 +110,138 @@ const People = () => {
       github: '#',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666126/WhatsApp_Image_2025-08-31_at_22.48.43_32ae20a0_jbxvgu.jpg',
       skills: ['Python', 'ROS', 'Machine Learning'],
-      projects: 4
+      projects: 2
     }, {
       name: 'Apurva Palamkar',
-      role: 'Software Team Lead',
+      role: 'Innovation & Ideas Coordinator',
       year: 'Third Year',
       branch: 'Electronics Engineering',
       email: 'apurvapalamkar@gmail.com',
       linkedin: '#',
       github: '#',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666395/WhatsApp_Image_2025-08-31_at_08.49.36_5dcd36fb_noh5kv.jpg',
-      skills: ['Python', 'ROS', 'Machine Learning'],
-      projects: 4
+      projects: 0
     }, {
       name: 'Shreya Bhoyar',
-      role: 'Software Team Lead',
+      role: 'Competition Captain',
       year: 'Third Year',
       branch: 'Electronics Engineering',
       email: 'shreya.bhoyar.etc@ghrcem.raisoni.net',
       linkedin: '#',
       github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp',
-      skills: ['Python', 'ROS', 'Machine Learning'],
-      projects: 4
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756720712/IMG-20250221-WA0080_1_wib5jz.jpg',
+      projects: 0
+    }, {
+      name: 'Hashim Ansari ',
+      role: 'Research & Development Lead',
+      year: 'Second Year',
+      branch: 'Electronics Engineering',
+      email: 'mo.hashim589@gmail.com',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756723505/WhatsApp_Image_2025-09-01_at_15.39.41_7acce680_ovzdrz.jpg',
+      projects: 0
     }, {
       name: 'Abhijeet Hulge',
       role: 'Club Member',
       year: 'Final Year',
       branch: 'Electronics Engineering',
-      email: '#',
+      email: 'abhijeethulge@gmail.com',
       linkedin: '#',
       github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp',
-      skills: ['Python', 'ROS', 'Machine Learning'],
-      projects: 4
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756723789/WhatsApp_Image_2025-09-01_at_16.12.28_a072177f_xxlqgd.jpg',
+      projects: 2
     }, {
       name: 'Prashant Pawar',
       role: 'Club Member',
+      year: 'Final year',
       branch: 'Electronics Engineering',
-      email: '#',
+      email: 'prashantpawar6966@gmail.com',
       linkedin: '#',
       github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp',
-      skills: ['Python', 'ROS', 'Machine Learning'],
-      projects: 4
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756730322/WhatsApp_Image_2025-09-01_at_18.04.38_80173a9b_hqh64o.jpg',
+      projects: 2
     }, {
-      name: 'Omkar Mane',
+      name: 'Omkar ManeDeshmukh ',
       role: 'Club Member',
       year: 'Final Year',
       branch: 'Electronics Engineering',
-      email: '#',
+      email: 'omkarmanedeshmukh5@gmail.com',
       linkedin: '#',
       github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp',
-      skills: ['Python', 'ROS', 'Machine Learning'],
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756733168/WhatsApp_Image_2025-09-01_at_18.54.29_3c5e63d8_zqcfim.jpg',
+      projects: 2
+    }, { 
+      name:'AYUSH SURAJ GOUD',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 3
+    },{ 
+      name:'PURVANSHU PRAVIN KALAL',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 2
+    },{ 
+      name:'ANISH DIGAMBAR MUDKANNA',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 2
+    },{ 
+      name:'SURYAWANSHI AAKANKSHA SANJAY',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 3
+    },{ 
+      name:'SABLE SUDARSHAN SHYAM',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 1
+    },{ 
+      name:'Jawahar Uttam Suryawanshi',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 2
+    },{ 
+      name:'Shreyash Umesh Gade',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
       projects: 4
-    }
+    },{ 
+      name:'Shivam Deepak Ambekar',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 1
+    },{ 
+      name:'Raman Dattu Kale',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 2
+    },{ 
+      name:'Amit Bapurao Gajbhare',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 2
+    },{ 
+      name:'Abhijeet Manohar Khanjode',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 3
+    },{ 
+      name:'Kishorkumar Kartikchandra Das',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 2
+    },{ 
+      name:'Pawan Chabban Gadekar',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 4
+    },{ 
+      name:'Niket Naresh Rathod',
+      role: 'Club Member',
+      branch: 'Electronics Engineering',
+      projects: 3
+    },
   ];
 
   return (
@@ -158,7 +260,7 @@ const People = () => {
         {/* Faculty Section */}
         <section className="mb-20">
           <h2 className="text-3xl font-bold mb-8 text-center">Faculty Coordinators</h2>
-          <div className="max-w-lg mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {faculty.map((member, index) => (
               <div
                 key={member.name}

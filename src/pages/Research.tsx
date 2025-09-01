@@ -24,6 +24,65 @@ const Research = () => {
     }
   ];
 
+   const  currentProjects = [
+    {
+      year:'AY 25-26',
+      title:'Agriculture Drone for crop monitoring',
+      name: 'Dipak Reddy , Aniket Shrungare , Pratik Mane , Manmath Minke ',
+      batch: '2022-2026',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668708/IMG-20250901-WA0035_nwtrqw.jpg',
+      image1: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668699/IMG-20250901-WA0024_fbqiak.jpg',
+      image2: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668698/IMG-20250901-WA0022_jomt7t.jpg',
+      image3: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668701/IMG-20250901-WA0027_aprtfr.jpg',
+      image4: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668695/IMG-20250901-WA0013_bhmxlh.jpg',
+      image5: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668703/IMG-20250901-WA0029_gatwok.jpg',
+    },{
+      year:'AY 25-26',
+      title:'Precision agriculture solution using computer vision and machine learning for crop monitoring',
+      name: 'Abhijeet Hulge , Prashant Pawar , Omkar Mane Deshmukh ',
+      batch: '2022-2026',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668704/IMG-20250901-WA0030_qderbb.jpg',
+      image1: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737450/IMG-20250901-WA0132_1_cvevd7.jpg',
+      image2: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737430/IMG-20250901-WA0122_1_iebrqi.jpg',
+      image3: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737168/IMG-20250901-WA0107_1_uu0yu9.jpg',
+      image4: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737450/IMG-20250901-WA0132_1_cvevd7.jpg',
+      image5: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737499/IMG-20250901-WA0125_1_ipj257.jpg',
+    },
+    
+  ];
+
+    const PastProjects = [
+     {
+      year:'AY 24-25',
+      title:'Autopilot Security Patrolling Drone',
+      name: 'AYUSH SURAJ GOUD , ANISH DIGAMBAR MUDKANNA , PURVANSHU PRAVIN KALAL',
+      image: ''
+    },
+     {
+      year:'AY 23-24',
+      title:'Underwater unmanned vehicle',
+      name: 'SURYAWANSHI AAKANKSHA SANJAY , SABLE SUDARSHAN SHYAM',
+      image: ''
+    },
+     {
+      year:'AY 22-23',
+      title:'TOPOLOGICAL SURVEY USING LIDAR MOTION DRONE',
+      name: 'Jawahar Uttam Suryawanshi, Shreyash Umesh Gade , Shivam Deepak Ambekar',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756735007/6_hdvccu.png'
+    },
+     {
+      year:'AY 21-22',
+      title:'Antidrone System',
+      name: 'Raman Dattu Kale, Amit Bapurao Gajbhare , Abhijeet Manohar Khanjode',
+      image: ''
+    },
+     {
+      year:'AY 21-22',
+      title:'Social Distancing and Mask Monitoring Drone',
+      studentnames: 'Kishorkumar Kartikchandra Das, Pawan Chabban Gadekar , Niket Naresh Rathod',
+      image: ''
+    },
+    ]
   return (
     <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

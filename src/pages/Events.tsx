@@ -7,7 +7,8 @@ const Events = () => {
     {
       id: 1,
       img_link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756672011/WhatsApp_Image_2025-09-01_at_01.54.57_3204db63_xfwggq.jpg",
-      form_link: "https://forms.gle/rH9Ktmdmiaq1UtaLA"
+      form_link: "https://forms.gle/rH9Ktmdmiaq1UtaLA",
+      map_link: "https://maps.app.goo.gl/uicrQg3tQk8yTDgU9"
     },
   ];
 
