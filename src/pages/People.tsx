@@ -120,6 +120,7 @@ const People = () => {
       linkedin: '#',
       github: '#',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666395/WhatsApp_Image_2025-08-31_at_08.49.36_5dcd36fb_noh5kv.jpg',
+      skills: ['Creativity', 'Problem Solving', 'Teamwork'],
       projects: 0
     }, {
       name: 'Shreya Bhoyar',
@@ -130,6 +131,7 @@ const People = () => {
       linkedin: '#',
       github: '#',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756720712/IMG-20250221-WA0080_1_wib5jz.jpg',
+      skills: ['Leadership', 'Team Management', 'Strategic Planning'],
       projects: 0
     }, {
       name: 'Hashim Ansari ',
@@ -140,6 +142,7 @@ const People = () => {
       linkedin: '#',
       github: '#',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756723505/WhatsApp_Image_2025-09-01_at_15.39.41_7acce680_ovzdrz.jpg',
+      skills: ['Research', 'Development', 'Team Collaboration'],
       projects: 0
     }, {
       name: 'Abhijeet Hulge',
@@ -150,6 +153,7 @@ const People = () => {
       linkedin: '#',
       github: '#',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756723789/WhatsApp_Image_2025-09-01_at_16.12.28_a072177f_xxlqgd.jpg',
+      skills: ['Teamwork', 'Communication', 'Problem Solving'],
       projects: 2
     }, {
       name: 'Prashant Pawar',
@@ -160,6 +164,7 @@ const People = () => {
       linkedin: '#',
       github: '#',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756730322/WhatsApp_Image_2025-09-01_at_18.04.38_80173a9b_hqh64o.jpg',
+      skills: ['Teamwork', 'Communication', 'Problem Solving'],
       projects: 2
     }, {
       name: 'Omkar ManeDeshmukh ',
@@ -170,76 +175,93 @@ const People = () => {
       linkedin: '#',
       github: '#',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756733168/WhatsApp_Image_2025-09-01_at_18.54.29_3c5e63d8_zqcfim.jpg',
+      skills: ['Teamwork', 'Communication', 'Problem Solving'],
       projects: 2
     }, { 
       name:'AYUSH SURAJ GOUD',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
+      skills: ['Teamwork', 'Communication', 'Problem Solving'],
       projects: 3
     },{ 
       name:'PURVANSHU PRAVIN KALAL',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
+      skills: ['Teamwork', 'Communication', 'Problem Solving'],
       projects: 2
     },{ 
       name:'ANISH DIGAMBAR MUDKANNA',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 2
     },{ 
       name:'SURYAWANSHI AAKANKSHA SANJAY',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 3
     },{ 
       name:'SABLE SUDARSHAN SHYAM',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 1
     },{ 
       name:'Jawahar Uttam Suryawanshi',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 2
     },{ 
       name:'Shreyash Umesh Gade',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 4
     },{ 
       name:'Shivam Deepak Ambekar',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 1
     },{ 
       name:'Raman Dattu Kale',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 2
     },{ 
       name:'Amit Bapurao Gajbhare',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 2
     },{ 
       name:'Abhijeet Manohar Khanjode',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 3
     },{ 
       name:'Kishorkumar Kartikchandra Das',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 2
     },{ 
       name:'Pawan Chabban Gadekar',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 4
     },{ 
       name:'Niket Naresh Rathod',
       role: 'Club Member',
       branch: 'Electronics Engineering',
+      image: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666717/blank-profile-picture-973460_1280_spkkbe.webp",
       projects: 3
     },
   ];
@@ -323,11 +345,13 @@ const People = () => {
                   <div>
                     <p className="text-sm font-medium mb-2">Skills</p>
                     <div className="flex flex-wrap gap-1">
-                      {member.skills.map((skill) => (
-                        <Badge key={skill} variant="secondary" className="text-xs">
-                          {skill}
-                        </Badge>
-                      ))}
+                      {Array.isArray(member.skills) && member.skills.length > 0 && (
+                        member.skills.map((skill) => (
+                          <Badge key={skill} variant="secondary" className="text-xs">
+                            {skill}
+                          </Badge>
+                        ))
+                      )}
                     </div>
                   </div>
 
