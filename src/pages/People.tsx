@@ -3,14 +3,7 @@ import { Mail, Linkedin, Github } from 'lucide-react';
 
 const People = () => {
   const faculty = [
-    {
-      name: 'Dr. Sandeep Hanwate',
-      role: 'Faculty Coordinator',
-      department: 'Electronics & Telecommunication',
-      email: 'sandeep.hanwate@raisoni.net',
-      image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=X9XdNlIAAAAJ&citpid=5',
-      bio: 'Leading research in UAV technology and autonomous systems.'
-    },
+    
      {
       name: 'Dr. R.D.Kharadkar',
       role: '',
@@ -34,6 +27,14 @@ const People = () => {
       email: '',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756724764/amol-bhoi_aj1e94.png',
       bio: 'Head of Department (HOD), Electronics & Telecommunication Engineering.'
+    },
+    {
+      name: 'Dr. Sandeep Hanwate',
+      role: 'Faculty Coordinator',
+      department: 'Electronics & Telecommunication',
+      email: 'sandeep.hanwate@raisoni.net',
+      image: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=X9XdNlIAAAAJ&citpid=5',
+      bio: 'Leading research in UAV technology and autonomous systems.'
     },
    
   
