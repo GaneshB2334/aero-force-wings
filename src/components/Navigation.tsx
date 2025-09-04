@@ -16,8 +16,6 @@ const Navigation = () => {
     { name: 'Gallery', path: '/gallery' },
     { name: 'Events', path: '/events' },
     { name: 'Contact', path: '/contact' },
-    { name: 'Success Stories', path: '/success-stories' },
-    { name: 'Our Collaborators', path: '/collaborators' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
