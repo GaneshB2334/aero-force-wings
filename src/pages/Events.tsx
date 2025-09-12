@@ -1,6 +1,6 @@
 import { Calendar, Clock, MapPin, Users, ArrowRight, X, Image as ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Events = () => {
@@ -13,7 +13,7 @@ const Events = () => {
     {
       id: 1,
       title: "Drone Workshop 2025",
-      date: "15/03/2025", // DD/MM/YYYY
+      date: "15/11/2025", // DD/MM/YYYY
       img_link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756672011/WhatsApp_Image_2025-09-01_at_01.54.57_3204db63_xfwggq.jpg",
       form_link: "https://forms.gle/rH9Ktmdmiaq1UtaLA",
       map_link: "https://maps.app.goo.gl/uicrQg3tQk8yTDgU9",
@@ -91,6 +91,20 @@ const Events = () => {
     setFullScreenImage(null);
     setFullScreenImageOpen(false);
   };
+
+  // Prevent body scroll when modals are open
+  useEffect(() => {
+    if (imageModalOpen || fullScreenImageOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup function to reset overflow when component unmounts
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [imageModalOpen, fullScreenImageOpen]);
 
   return (
     <div className="min-h-screen py-20">

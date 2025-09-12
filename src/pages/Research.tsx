@@ -1,6 +1,12 @@
-import { Target, Zap, Users, Settings } from 'lucide-react';
+import { Target, Zap, Users, Settings, X, Image as ImageIcon } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Research = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [imageModalOpen, setImageModalOpen] = useState(false);
+  const [fullScreenImage, setFullScreenImage] = useState(null);
+  const [fullScreenImageOpen, setFullScreenImageOpen] = useState(false);
   const researchAreas = [
     {
       icon: Target,
@@ -24,65 +30,117 @@ const Research = () => {
     }
   ];
 
-  const currentProjects = [
+  const allProjects = [
     {
       year: 'AY 25-26',
       title: 'Agriculture Drone for crop monitoring',
       name: 'Dipak Reddy , Aniket Shrungare , Pratik Mane , Manmath Minke ',
       batch: '2022-2026',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668708/IMG-20250901-WA0035_nwtrqw.jpg',
-      image1: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668699/IMG-20250901-WA0024_fbqiak.jpg',
-      image2: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668698/IMG-20250901-WA0022_jomt7t.jpg',
-      image3: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668701/IMG-20250901-WA0027_aprtfr.jpg',
-      image4: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668695/IMG-20250901-WA0013_bhmxlh.jpg',
-      image5: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668703/IMG-20250901-WA0029_gatwok.jpg',
-    }, {
+      status: 'current',
+      images: [
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668708/IMG-20250901-WA0035_nwtrqw.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668699/IMG-20250901-WA0024_fbqiak.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668698/IMG-20250901-WA0022_jomt7t.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668701/IMG-20250901-WA0027_aprtfr.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668695/IMG-20250901-WA0013_bhmxlh.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668703/IMG-20250901-WA0029_gatwok.jpg'
+      ].filter(Boolean),
+      tags: ['Agriculture', 'Computer Vision', 'IoT', 'Machine Learning']
+    },
+    {
       year: 'AY 25-26',
       title: 'Precision agriculture solution using computer vision and machine learning for crop monitoring',
       name: 'Abhijeet Hulge , Prashant Pawar , Omkar Mane Deshmukh ',
       batch: '2022-2026',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668704/IMG-20250901-WA0030_qderbb.jpg',
-      image1: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737450/IMG-20250901-WA0132_1_cvevd7.jpg',
-      image2: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737430/IMG-20250901-WA0122_1_iebrqi.jpg',
-      image3: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737168/IMG-20250901-WA0107_1_uu0yu9.jpg',
-      image4: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737450/IMG-20250901-WA0132_1_cvevd7.jpg',
-      image5: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737499/IMG-20250901-WA0125_1_ipj257.jpg',
+      status: 'current',
+      images: [
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668704/IMG-20250901-WA0030_qderbb.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737450/IMG-20250901-WA0132_1_cvevd7.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737430/IMG-20250901-WA0122_1_iebrqi.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737168/IMG-20250901-WA0107_1_uu0yu9.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737450/IMG-20250901-WA0132_1_cvevd7.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737499/IMG-20250901-WA0125_1_ipj257.jpg'
+      ].filter(Boolean),
+      tags: ['Agriculture', 'Computer Vision', 'IoT', 'Machine Learning']
     },
-
-  ];
-
-  const PastProjects = [
     {
       year: 'AY 24-25',
       title: 'Autopilot Security Patrolling Drone',
       name: 'AYUSH SURAJ GOUD , ANISH DIGAMBAR MUDKANNA , PURVANSHU PRAVIN KALAL',
-      image: ''
+      status: 'past',
+      images: [],
+      tags: ['Security', 'Autopilot', 'Surveillance']
     },
     {
       year: 'AY 23-24',
       title: 'Underwater unmanned vehicle',
       name: 'SURYAWANSHI AAKANKSHA SANJAY , SABLE SUDARSHAN SHYAM',
-      image: ''
+      status: 'past',
+      images: [],
+      tags: ['Underwater', 'ROV', 'Marine Technology']
     },
     {
       year: 'AY 22-23',
       title: 'TOPOLOGICAL SURVEY USING LIDAR MOTION DRONE',
       name: 'Jawahar Uttam Suryawanshi, Shreyash Umesh Gade , Shivam Deepak Ambekar',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756735007/6_hdvccu.png'
+      status: 'past',
+      images: ['https://res.cloudinary.com/dinhdwh2y/image/upload/v1756735007/6_hdvccu.png'].filter(Boolean),
+      tags: ['LIDAR', 'Survey', 'Mapping', '3D Modeling']
     },
     {
       year: 'AY 21-22',
       title: 'Antidrone System',
       name: 'Raman Dattu Kale, Amit Bapurao Gajbhare , Abhijeet Manohar Khanjode',
-      image: ''
+      status: 'past',
+      images: [],
+      tags: ['Defense', 'Counter-UAV', 'Security']
     },
     {
       year: 'AY 21-22',
       title: 'Social Distancing and Mask Monitoring Drone',
-      studentnames: 'Kishorkumar Kartikchandra Das, Pawan Chabban Gadekar , Niket Naresh Rathod',
-      image: ''
-    },
-  ]
+      name: 'Kishorkumar Kartikchandra Das, Pawan Chabban Gadekar , Niket Naresh Rathod',
+      status: 'past',
+      images: [],
+      tags: ['Health Monitoring', 'AI Detection', 'Public Safety']
+    }
+  ];
+
+  const currentProjects = allProjects.filter(project => project.status === 'current');
+  const pastProjects = allProjects.filter(project => project.status === 'past');
+
+  const openImageModal = (project) => {
+    setSelectedProject(project);
+    setImageModalOpen(true);
+  };
+
+  const closeImageModal = () => {
+    setImageModalOpen(false);
+    setSelectedProject(null);
+  };
+
+  const openFullScreenImage = (imageSrc) => {
+    setFullScreenImage(imageSrc);
+    setFullScreenImageOpen(true);
+  };
+
+  const closeFullScreenImage = () => {
+    setFullScreenImage(null);
+    setFullScreenImageOpen(false);
+  };
+
+  // Prevent body scroll when modals are open
+  useEffect(() => {
+    if (imageModalOpen || fullScreenImageOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup function to reset overflow when component unmounts
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [imageModalOpen, fullScreenImageOpen]);
 
   return (
     <div className="min-h-screen py-20">
@@ -149,26 +207,38 @@ const Research = () => {
 
                   {/* Project Images Grid */}
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    {[project.image, project.image1, project.image2, project.image3, project.image4, project.image5]
-                      .filter(Boolean)
-                      .slice(0, 6)
-                      .map((image, imgIndex) => (
-                        <div key={imgIndex} className="aspect-square rounded-lg overflow-hidden bg-secondary/20">
-                          <img
-                            src={image}
-                            alt={`${project.title} - Image ${imgIndex + 1}`}
-                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                          />
-                        </div>
-                      ))}
+                    {project.images.slice(0, 6).map((image, imgIndex) => (
+                      <div key={imgIndex} className="aspect-square rounded-lg overflow-hidden bg-secondary/20">
+                        <img
+                          src={image}
+                          alt={`${project.title} - Image ${imgIndex + 1}`}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+                          onClick={() => openImageModal(project)}
+                        />
+                      </div>
+                    ))}
+                    {project.images.length === 0 && (
+                      <div className="aspect-square rounded-lg bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center col-span-3">
+                        <Target className="h-12 w-12 text-primary/40" />
+                      </div>
+                    )}
                   </div>
 
                   {/* Project Tags */}
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-green-500/10 text-green-500 rounded-full text-sm">Agriculture</span>
-                    <span className="px-3 py-1 bg-blue-500/10 text-blue-500 rounded-full text-sm">Computer Vision</span>
-                    <span className="px-3 py-1 bg-purple-500/10 text-purple-500 rounded-full text-sm">IoT</span>
-                    <span className="px-3 py-1 bg-orange-500/10 text-orange-500 rounded-full text-sm">Machine Learning</span>
+                    {project.tags.map((tag, tagIndex) => (
+                      <span 
+                        key={tagIndex}
+                        className={`px-3 py-1 rounded-full text-sm ${
+                          tagIndex % 4 === 0 ? 'bg-green-500/10 text-green-500' :
+                          tagIndex % 4 === 1 ? 'bg-blue-500/10 text-blue-500' :
+                          tagIndex % 4 === 2 ? 'bg-purple-500/10 text-purple-500' :
+                          'bg-orange-500/10 text-orange-500'
+                        }`}
+                      >
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -183,18 +253,19 @@ const Research = () => {
               <span className="text-gradient">Past</span> Projects
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {PastProjects.map((project, index) => (
+              {pastProjects.map((project, index) => (
                 <div
                   key={index}
-                  className="card-tech group hover-glow"
+                  className="card-tech group hover-glow cursor-pointer"
                   style={{ animationDelay: `${index * 0.1}s` }}
+                  onClick={() => openImageModal(project)}
                 >
                   <div className="space-y-4">
                     {/* Project Image */}
-                    {project.image ? (
+                    {project.images.length > 0 ? (
                       <div className="aspect-video rounded-lg overflow-hidden bg-secondary/20">
                         <img
-                          src={project.image}
+                          src={project.images[0]}
                           alt={project.title}
                           className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                         />
@@ -220,8 +291,25 @@ const Research = () => {
                       <div className="space-y-2">
                         <p className="text-sm text-muted-foreground font-medium">Team Members:</p>
                         <p className="text-sm text-muted-foreground line-clamp-3">
-                          {project.name || project.studentnames}
+                          {project.name}
                         </p>
+                      </div>
+                      
+                      {/* Project Tags */}
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag, tagIndex) => (
+                          <span 
+                            key={tagIndex}
+                            className={`px-2 py-1 rounded-full text-xs ${
+                              tagIndex % 4 === 0 ? 'bg-green-500/10 text-green-500' :
+                              tagIndex % 4 === 1 ? 'bg-blue-500/10 text-blue-500' :
+                              tagIndex % 4 === 2 ? 'bg-purple-500/10 text-purple-500' :
+                              'bg-orange-500/10 text-orange-500'
+                            }`}
+                          >
+                            {tag}
+                          </span>
+                        ))}
                       </div>
                     </div>
 
@@ -238,6 +326,98 @@ const Research = () => {
           </div>
         </section>
       </div>
+
+      {/* Image Modal */}
+      <AnimatePresence>
+        {imageModalOpen && selectedProject && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+            onClick={closeImageModal}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="bg-card rounded-lg p-6 max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+              onClick={e => e.stopPropagation()}
+            >
+              <div className="flex justify-between items-center mb-4">
+                <h3 className="text-xl font-semibold">{selectedProject.title}</h3>
+                <button
+                  onClick={closeImageModal}
+                  className="p-2 hover:bg-secondary rounded-lg transition-colors"
+                >
+                  <X className="h-5 w-5" />
+                </button>
+              </div>
+              
+              {selectedProject.images.length > 0 ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {selectedProject.images.map((image, index) => (
+                    <div
+                      key={index}
+                      className="aspect-square rounded-lg overflow-hidden cursor-pointer group"
+                    >
+                      <img
+                        src={image}
+                        alt={`${selectedProject.title} - Image ${index + 1}`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        onClick={() => openFullScreenImage(image)}
+                      />
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-center py-12">
+                  <ImageIcon className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
+                  <p className="text-muted-foreground">No images available for this project</p>
+                </div>
+              )}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Full Screen Image */}
+      <AnimatePresence>
+        {fullScreenImageOpen && fullScreenImage && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black z-[100] flex items-center justify-center p-4"
+            onClick={closeFullScreenImage}
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              className="relative w-full h-full flex items-center justify-center"
+            >
+              <img
+                src={fullScreenImage}
+                alt="Full screen view"
+                className="w-auto h-auto"
+                style={{
+                  maxWidth: 'calc(100vw - 2rem)',
+                  maxHeight: 'calc(100vh - 2rem)',
+                  objectFit: 'contain'
+                }}
+                onClick={e => e.stopPropagation()}
+              />
+              <button
+                onClick={closeFullScreenImage}
+                className="absolute top-4 right-4 p-2 bg-black/50 hover:bg-black/70 rounded-lg transition-colors text-white"
+              >
+                <X className="h-6 w-6" />
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

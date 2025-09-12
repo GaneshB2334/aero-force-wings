@@ -52,6 +52,15 @@ const Navigation = () => {
             </div> */}
           </Link>
 
+          {/* College Image */}
+          {/* <div className="hidden md:flex items-center justify-center flex-1 px-8">
+            <img 
+              className='h-16 w-auto object-contain transition-all duration-300' 
+              src="https://res.cloudinary.com/dfuwsfjjc/image/upload/v1757706862/Picture1_pcvqmv.png" 
+              alt="College Logo" 
+            />
+          </div> */}
+
           {/* Right side controls */}
           <div className="flex items-center space-x-">
             <ThemeToggle />
