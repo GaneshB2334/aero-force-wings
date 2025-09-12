@@ -6,7 +6,77 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Aviation Tech Theme */
+    /* Brand Colors - Aviation Tech Theme - Light Mode */
+    --background: 0 0% 100%;
+    --background-secondary: 240 4.8% 95.9%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    /* Primary - Electric Blue/Cyan - Darker for light theme */
+    --primary: 195 100% 35%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 195 100% 45%;
+
+    /* Secondary - Deep Tech Blue - Darker for light theme */
+    --secondary: 221 83% 35%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Aviation Gray Tones */
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    /* Tech Accent - Neon Cyan - Darker for light theme */
+    --accent: 180 100% 35%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom Drone/Tech Colors */
+    --drone-silver: 240 5% 85%;
+    --sky-blue: 210 100% 85%;
+    --tech-light: 240 4.8% 95.9%;
+    --glow-cyan: 180 100% 50%;
+
+    /* Gradients - Adjusted for light theme with better contrast */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--tech-light)) 50%, hsl(var(--primary) / 0.15) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted) / 0.3) 100%);
+    --gradient-tech: linear-gradient(45deg, hsl(195 100% 35%) 0%, hsl(180 100% 35%) 100%);
+    --gradient-sky: linear-gradient(180deg, hsl(var(--sky-blue) / 0.1) 0%, hsl(var(--background)) 100%);
+
+    /* Shadows and Glows - Enhanced for light theme */
+    --shadow-tech: 0 10px 40px -15px hsl(var(--primary) / 0.25);
+    --shadow-card: 0 4px 20px -5px hsl(var(--primary) / 0.08);
+    --glow-primary: 0 0 30px hsl(var(--primary) / 0.3);
+    --glow-accent: 0 0 20px hsl(var(--accent) / 0.25);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode for AeroForce - maintain tech theme */
     --background: 240 10% 3.9%;
     --background-secondary: 240 8% 6%;
     --foreground: 210 40% 98%;
@@ -17,21 +87,16 @@
     --popover: 240 8% 6%;
     --popover-foreground: 210 40% 98%;
 
-    /* Primary - Electric Blue/Cyan */
-    --primary: 195 100% 50%;
+    --primary: 195 100% 55%;
     --primary-foreground: 240 10% 3.9%;
-    --primary-glow: 195 100% 70%;
 
-    /* Secondary - Deep Tech Blue */
-    --secondary: 221 83% 53%;
+    --secondary: 221 83% 60%;
     --secondary-foreground: 210 40% 98%;
 
-    /* Aviation Gray Tones */
     --muted: 240 5% 25%;
     --muted-foreground: 240 5% 65%;
 
-    /* Tech Accent - Neon Cyan */
-    --accent: 180 100% 50%;
+    --accent: 180 100% 55%;
     --accent-foreground: 240 10% 3.9%;
 
     --destructive: 0 84.2% 60.2%;
@@ -39,58 +104,10 @@
 
     --border: 240 5% 25%;
     --input: 240 5% 25%;
-    --ring: 195 100% 50%;
 
-    --radius: 0.75rem;
-
-    /* Custom Drone/Tech Colors */
-    --drone-silver: 240 5% 85%;
-    --sky-blue: 210 100% 85%;
-    --tech-dark: 240 10% 8%;
-    --glow-cyan: 180 100% 50%;
-
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--tech-dark)) 50%, hsl(var(--primary) / 0.1) 100%);
+    /* Gradients for dark mode */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(240 10% 8%) 50%, hsl(var(--primary) / 0.1) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(var(--muted) / 0.3) 100%);
-    --gradient-tech: linear-gradient(45deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
-    --gradient-sky: linear-gradient(180deg, hsl(var(--sky-blue) / 0.1) 0%, hsl(var(--background)) 100%);
-
-    /* Shadows and Glows */
-    --shadow-tech: 0 10px 40px -15px hsl(var(--primary) / 0.3);
-    --shadow-card: 0 4px 20px -5px hsl(var(--primary) / 0.1);
-    --glow-primary: 0 0 30px hsl(var(--primary) / 0.4);
-    --glow-accent: 0 0 20px hsl(var(--accent) / 0.3);
-
-    /* Animations */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    /* Dark mode for AeroForce - maintain tech theme */
-    --background: 240 10% 3.9%;
-    --background-secondary: 240 8% 6%;
-    --foreground: 210 40% 98%;
-    --card: 240 8% 6%;
-    --card-foreground: 210 40% 98%;
-    --primary: 195 100% 50%;
-    --primary-foreground: 240 10% 3.9%;
   }
 }
 
@@ -119,6 +136,12 @@
     @apply shadow-[var(--shadow-card)] backdrop-blur-sm;
     @apply transition-all duration-300 hover:shadow-[var(--shadow-tech)] hover:-translate-y-1;
     background: var(--gradient-card);
+    border-color: hsl(var(--border));
+  }
+
+  /* Enhanced visibility for light theme */
+  .card-tech:hover {
+    border-color: hsl(var(--primary) / 0.3);
   }
 
   /* Floating Animation */
