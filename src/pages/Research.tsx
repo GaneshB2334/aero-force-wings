@@ -69,7 +69,7 @@ const Research = () => {
       title: 'Autopilot Security Patrolling Drone',
       name: 'AYUSH SURAJ GOUD , ANISH DIGAMBAR MUDKANNA , PURVANSHU PRAVIN KALAL',
       status: 'past',
-      images: [],
+      images: ["https://res.cloudinary.com/dinhdwh2y/image/upload/v1757878637/download_ml6niq.jpg"],
       tags: ['Security', 'Autopilot', 'Surveillance']
     },
     {
@@ -77,7 +77,7 @@ const Research = () => {
       title: 'Underwater unmanned vehicle',
       name: 'SURYAWANSHI AAKANKSHA SANJAY , SABLE SUDARSHAN SHYAM',
       status: 'past',
-      images: [],
+      images: ["https://res.cloudinary.com/dinhdwh2y/image/upload/v1757878734/images_pogmq1.jpg"],
       tags: ['Underwater', 'ROV', 'Marine Technology']
     },
     {
@@ -93,7 +93,7 @@ const Research = () => {
       title: 'Antidrone System',
       name: 'Raman Dattu Kale, Amit Bapurao Gajbhare , Abhijeet Manohar Khanjode',
       status: 'past',
-      images: [],
+      images: ["https://res.cloudinary.com/dinhdwh2y/image/upload/v1757878689/download_cdngx6.jpg"],
       tags: ['Defense', 'Counter-UAV', 'Security']
     },
     {
@@ -101,7 +101,7 @@ const Research = () => {
       title: 'Social Distancing and Mask Monitoring Drone',
       name: 'Kishorkumar Kartikchandra Das, Pawan Chabban Gadekar , Niket Naresh Rathod',
       status: 'past',
-      images: [],
+      images: ["https://res.cloudinary.com/dinhdwh2y/image/upload/v1757878739/download_njhnbo.jpg"],
       tags: ['Health Monitoring', 'AI Detection', 'Public Safety']
     }
   ];

@@ -121,7 +121,7 @@ const Index = () => {
                 students with practical experience in drone design, programming, and applications 
                 across various industries.
               </p>
-              <Link to="/contact" target='_blank'>
+              <Link to="https://docs.google.com/forms/d/e/1FAIpQLSedvVd3ZG8TnBP2QgRPtHiGX9-EJ41Fu17m_QHQGROI3_1hbw/viewform?usp=header" target='_blank'>
                 <Button className="btn-hero">
                   Join Our Community
                   <ArrowRight className="ml-2 h-5 w-5" />

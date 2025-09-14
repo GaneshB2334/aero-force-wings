@@ -61,7 +61,7 @@ const People = () => {
       email: '#',
       linkedin: '#',
       github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666160/WhatsApp_Image_2025-08-31_at_23.58.52_84600df6_kxkcgr.jpg',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757873956/WhatsApp_Image_2025-08-31_at_23.58.37_a998c56d_ggbt4b.jpg',
       skills: ['PCB Design', 'Embedded Systems', 'IoT'],
       projects: 2
     },
@@ -73,7 +73,7 @@ const People = () => {
       email: 'aniketshrungare269@gmail.com',
       linkedin: '#',
       github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666658/WhatsApp_Image_2025-09-01_at_00.24.04_0cdb26cf_xtwtvq.jpg',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757873960/WhatsApp_Image_2025-08-31_at_23.57.36_4ca62497_fuupzi.jpg',
       skills: ['AI/ML', 'Computer Vision', 'Programming'],
       projects: 2
     },{
@@ -119,7 +119,7 @@ const People = () => {
       email: 'manmathminke2004@gmail.com',
       linkedin: '#',
       github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666229/WhatsApp_Image_2025-08-31_at_23.58.29_c8b5ae46_f5hup2.jpg',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757873956/WhatsApp_Image_2025-08-31_at_23.58.14_e6d4e323_d7hljy.jpg',
       skills: ['Event Management', 'Communications', 'Marketing'],
       projects: 2
     },
@@ -131,7 +131,7 @@ const People = () => {
       email: 'rehansheikh.etc@gmail.com',
       linkedin: '#',
       github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666126/WhatsApp_Image_2025-08-31_at_22.48.43_32ae20a0_jbxvgu.jpg',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757873966/WhatsApp_Image_2025-08-31_at_23.57.27_3ad51961_c0sea7.jpg',
       skills: ['Python', 'ROS', 'Machine Learning'],
       projects: 2
     }, {
@@ -142,7 +142,7 @@ const People = () => {
       email: 'apurvapalamkar@gmail.com',
       linkedin: '#',
       github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666395/WhatsApp_Image_2025-08-31_at_08.49.36_5dcd36fb_noh5kv.jpg',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757873955/WhatsApp_Image_2025-08-31_at_23.58.01_786da823_jznvry.jpg',
       skills: ['Creativity', 'Problem Solving', 'Teamwork'],
       projects: 0
     },   {
@@ -154,6 +154,28 @@ const People = () => {
       linkedin: '#',
       github: '#',
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756733168/WhatsApp_Image_2025-09-01_at_18.54.29_3c5e63d8_zqcfim.jpg',
+      skills: ['Teamwork', 'Communication', 'Problem Solving'],
+      projects: 2
+    }, {
+      name: 'Abhijeet Hulge ',
+      role: 'Club Member',
+      year: 'Final Year',
+      branch: 'Electronics Engineering',
+      email: 'omkarmanedeshmukh5@gmail.com',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756723789/WhatsApp_Image_2025-09-01_at_16.12.28_a072177f_xxlqgd.jpg',
+      skills: ['Teamwork', 'Communication', 'Problem Solving'],
+      projects: 2
+    }, {
+      name: 'Prashant Pawar ',
+      role: 'Club Member',
+      year: 'Final Year',
+      branch: 'Electronics Engineering',
+      email: 'omkarmanedeshmukh5@gmail.com',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756730322/WhatsApp_Image_2025-09-01_at_18.04.38_80173a9b_hqh64o.jpg',
       skills: ['Teamwork', 'Communication', 'Problem Solving'],
       projects: 2
     }, { 
