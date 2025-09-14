@@ -76,7 +76,18 @@ const People = () => {
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666658/WhatsApp_Image_2025-09-01_at_00.24.04_0cdb26cf_xtwtvq.jpg',
       skills: ['AI/ML', 'Computer Vision', 'Programming'],
       projects: 2
-    },
+    },{
+      name: 'Shreya Bhoyar',
+      role: 'Vice Secretary',
+      year: 'Third Year',
+      branch: 'Electronics Engineering',
+      email: 'shreya.bhoyar.etc@ghrcem.raisoni.net',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756720712/IMG-20250221-WA0080_1_wib5jz.jpg',
+      skills: ['Leadership', 'Team Management', 'Strategic Planning'],
+      projects: 0
+    }, 
     {
       name: 'Pratik Mane',
       role: 'Simulation & Testing Lead , Hardware Lead',
@@ -88,6 +99,17 @@ const People = () => {
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756726622/WhatsApp_Image_2025-09-01_at_17.04.19_d668cdcd_bvemjo.jpg',
       skills: ['CAD Design', 'Manufacturing', '3D Printing'],
       projects: 2
+    },{
+      name: 'Hashim Ansari ',
+      role: 'PR Lead, Research & Development Lead',
+      year: 'Second Year',
+      branch: 'Electronics Engineering',
+      email: 'mo.hashim589@gmail.com',
+      linkedin: '#',
+      github: '#',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756723505/WhatsApp_Image_2025-09-01_at_15.39.41_7acce680_ovzdrz.jpg',
+      skills: ['Research', 'Development', 'Team Collaboration'],
+      projects: 0
     },
     {
       name: 'Manmath Minke',
@@ -123,51 +145,7 @@ const People = () => {
       image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756666395/WhatsApp_Image_2025-08-31_at_08.49.36_5dcd36fb_noh5kv.jpg',
       skills: ['Creativity', 'Problem Solving', 'Teamwork'],
       projects: 0
-    }, {
-      name: 'Shreya Bhoyar',
-      role: 'Competition Captain',
-      year: 'Third Year',
-      branch: 'Electronics Engineering',
-      email: 'shreya.bhoyar.etc@ghrcem.raisoni.net',
-      linkedin: '#',
-      github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756720712/IMG-20250221-WA0080_1_wib5jz.jpg',
-      skills: ['Leadership', 'Team Management', 'Strategic Planning'],
-      projects: 0
-    }, {
-      name: 'Hashim Ansari ',
-      role: 'Research & Development Lead',
-      year: 'Second Year',
-      branch: 'Electronics Engineering',
-      email: 'mo.hashim589@gmail.com',
-      linkedin: '#',
-      github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756723505/WhatsApp_Image_2025-09-01_at_15.39.41_7acce680_ovzdrz.jpg',
-      skills: ['Research', 'Development', 'Team Collaboration'],
-      projects: 0
-    }, {
-      name: 'Abhijeet Hulge',
-      role: 'Club Member',
-      year: 'Final Year',
-      branch: 'Electronics Engineering',
-      email: 'abhijeethulge@gmail.com',
-      linkedin: '#',
-      github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756723789/WhatsApp_Image_2025-09-01_at_16.12.28_a072177f_xxlqgd.jpg',
-      skills: ['Teamwork', 'Communication', 'Problem Solving'],
-      projects: 2
-    }, {
-      name: 'Prashant Pawar',
-      role: 'Club Member',
-      year: 'Final year',
-      branch: 'Electronics Engineering',
-      email: 'prashantpawar6966@gmail.com',
-      linkedin: '#',
-      github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756730322/WhatsApp_Image_2025-09-01_at_18.04.38_80173a9b_hqh64o.jpg',
-      skills: ['Teamwork', 'Communication', 'Problem Solving'],
-      projects: 2
-    }, {
+    },   {
       name: 'Omkar ManeDeshmukh ',
       role: 'Club Member',
       year: 'Final Year',

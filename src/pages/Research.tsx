@@ -39,13 +39,15 @@ const Research = () => {
       status: 'current',
       images: [
         'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668708/IMG-20250901-WA0035_nwtrqw.jpg',
-        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668699/IMG-20250901-WA0024_fbqiak.jpg',
-        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668698/IMG-20250901-WA0022_jomt7t.jpg',
-        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668701/IMG-20250901-WA0027_aprtfr.jpg',
-        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668695/IMG-20250901-WA0013_bhmxlh.jpg',
-        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668703/IMG-20250901-WA0029_gatwok.jpg'
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757858622/IMG-20250901-WA0022_r1iija.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757858621/IMG-20250901-WA0033_bjel4h.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757858620/IMG-20250901-WA0024_nlksb7.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757858619/IMG-20250901-WA0027_hhrodh.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757858620/IMG-20250901-WA0028_eg3fgm.jpg',
+        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757858617/IMG-20250901-WA0014_qik32b.jpg',
+        
       ].filter(Boolean),
-      tags: ['Agriculture', 'Computer Vision', 'IoT', 'Machine Learning']
+      tags: ['Agriculture', 'Computer Vision', 'Mission Planner', 'Machine Learning']
     },
     {
       year: 'AY 25-26',
@@ -54,14 +56,13 @@ const Research = () => {
       batch: '2022-2026',
       status: 'current',
       images: [
-        'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756668704/IMG-20250901-WA0030_qderbb.jpg',
         'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737450/IMG-20250901-WA0132_1_cvevd7.jpg',
         'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737430/IMG-20250901-WA0122_1_iebrqi.jpg',
         'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737168/IMG-20250901-WA0107_1_uu0yu9.jpg',
         'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737450/IMG-20250901-WA0132_1_cvevd7.jpg',
         'https://res.cloudinary.com/dinhdwh2y/image/upload/v1756737499/IMG-20250901-WA0125_1_ipj257.jpg'
       ].filter(Boolean),
-      tags: ['Agriculture', 'Computer Vision', 'IoT', 'Machine Learning']
+      tags: ['Agriculture', 'Computer Vision', 'IoT', 'Mission Planner']
     },
     {
       year: 'AY 24-25',

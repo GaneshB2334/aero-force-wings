@@ -13,14 +13,14 @@ const Events = () => {
     {
       id: 1,
       title: "Drone Workshop 2025",
-      date: "15/11/2025", // DD/MM/YYYY
+      date: "04/09/2025", // DD/MM/YYYY
       img_link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756672011/WhatsApp_Image_2025-09-01_at_01.54.57_3204db63_xfwggq.jpg",
       form_link: "https://forms.gle/rH9Ktmdmiaq1UtaLA",
       map_link: "https://maps.app.goo.gl/uicrQg3tQk8yTDgU9",
       description: "Learn the fundamentals of drone technology and hands-on flying experience.",
       images: [
         "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756672011/WhatsApp_Image_2025-09-01_at_01.54.57_3204db63_xfwggq.jpg",
-        "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756673114/Untitled_design1_jbdlml.png"
+        ""
       ]
     },
     {
