@@ -19,6 +19,7 @@ const Events = () => {
       map_link: "https://maps.app.goo.gl/uicrQg3tQk8yTDgU9",
       description: "Learn the fundamentals of drone technology and hands-on flying experience.",
       images: [
+        "https://res.cloudinary.com/dinhdwh2y/image/upload/v1758195111/WhatsApp_Image_2025-08-30_at_13.54.39_a73c8013_yxlnm7.jpg",
         "https://res.cloudinary.com/dinhdwh2y/image/upload/v1757874756/IMG_20250912_130637_ux2net.jpg",
         "https://res.cloudinary.com/dinhdwh2y/image/upload/v1757875193/20250903_112822_uvwinq.jpg",
         "https://res.cloudinary.com/dinhdwh2y/image/upload/v1757874842/IMG20250904175257_1_qcdeyo.jpg",
@@ -87,6 +88,7 @@ const Events = () => {
       img_link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756673114/Untitled_design1_jbdlml.png",
       description: "Previous drone workshop that was successfully conducted.",
       images: [
+        "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756673114/Untitled_design1_jbdlml.png",
         "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756726637/WhatsApp_Image_2025-09-01_at_17.04.19_5b36b475_pdsexo.jpg",
         "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671688/IMG_2472_oy3wmi.jpg",
         "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756671277/IMG_2217_suolc5.jpg",
@@ -111,7 +113,9 @@ const Events = () => {
       date: "31/07/2023", // Past date
       img_link: "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756673332/Untitled_design_ygmsdn.png",
       description: "Another successful event from our past activities.",
-      images: [] // No images array
+      images: [
+         "https://res.cloudinary.com/dinhdwh2y/image/upload/v1756673332/Untitled_design_ygmsdn.png",
+      ] 
     },
   ];
 

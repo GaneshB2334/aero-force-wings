@@ -73,7 +73,7 @@ const People = () => {
       email: 'aniketshrungare269@gmail.com',
       linkedin: '#',
       github: '#',
-      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1757873960/WhatsApp_Image_2025-08-31_at_23.57.36_4ca62497_fuupzi.jpg',
+      image: 'https://res.cloudinary.com/dinhdwh2y/image/upload/v1758195102/WhatsApp_Image_2025-09-18_at_16.56.10_6011e55a_sdkvzx.jpg',
       skills: ['AI/ML', 'Computer Vision', 'Programming'],
       projects: 2
     },{
